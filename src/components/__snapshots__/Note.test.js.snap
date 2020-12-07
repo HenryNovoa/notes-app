@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Note Component expect to render Note component 1`] = `
+<div
+  className="note"
+  id={1}
+>
+  <p>
+    Mock text
+  </p>
+  <div
+    className="btn-container"
+  >
+    <button
+      className="edit"
+      onClick={[Function]}
+    >
+      Edit
+    </button>
+  </div>
+</div>
+`;

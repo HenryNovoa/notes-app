@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext, useReducer } from 'react'
+import { NotesContext } from './context'
+import { notesReducer } from './reducer'
+import { Nav } from './components/Nav'
+import { AddNote } from './components/AddNote'
+import { NoteList } from './components/NoteList'
+import { EditNote } from './components/EditNote'
+
 
 function App() {
+  const initialState = useContext(NotesContext)
+  const [state, dispatch ] = useReducer(notesReducer, initialState)
+  console.log(state)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <NotesContext.Provider value={{state, dispatch}}>
+        <Nav/>
+        {state.currentNote === null ? (
+        <>
+          <AddNote/>
+          <NoteList />
+        </>
+        )
+        : <EditNote></EditNote> }
+    </NotesContext.Provider>
+  )
 }
 
 export default App;

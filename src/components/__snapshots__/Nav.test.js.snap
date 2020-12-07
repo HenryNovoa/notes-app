@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav Component expect to render Nav component 1`] = `
+<nav>
+  <div>
+    Notes App
+  </div>
+</nav>
+`;

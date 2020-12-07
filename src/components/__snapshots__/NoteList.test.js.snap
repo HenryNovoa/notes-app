@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteList Component expect to render NoteList component 1`] = `
+<NoteList>
+  <div
+    className="notes-container"
+  >
+    <Note
+      key="0"
+      note={
+        Object {
+          "id": 1,
+          "text": "Do small assestment",
+        }
+      }
+    >
+      <div
+        className="note"
+        id={1}
+      >
+        <p>
+          Do small assestment
+        </p>
+        <div
+          className="btn-container"
+        >
+          <button
+            className="edit"
+            onClick={[Function]}
+          >
+            Edit
+          </button>
+        </div>
+      </div>
+    </Note>
+    <Note
+      key="1"
+      note={
+        Object {
+          "id": 2,
+          "text": "Write Tests",
+        }
+      }
+    >
+      <div
+        className="note"
+        id={2}
+      >
+        <p>
+          Write Tests
+        </p>
+        <div
+          className="btn-container"
+        >
+          <button
+            className="edit"
+            onClick={[Function]}
+          >
+            Edit
+          </button>
+        </div>
+      </div>
+    </Note>
+  </div>
+</NoteList>
+`;

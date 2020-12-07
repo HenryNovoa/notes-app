@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddNote Component expect to render AddNote component 1`] = `
+<AddNote>
+  <div
+    className="note-form"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <button>
+        Add Note
+      </button>
+    </form>
+  </div>
+</AddNote>
+`;
